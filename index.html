@@ -6,14 +6,14 @@
     </head>
 
     <body>
-        <header class="index-header">
+        <header class="page-header">
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <a class="navigation-link" href="index.html">Главная</a>
+                        <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="index.html">О Седоне</a>
+                        <a class="navigation-link" href="index.html#about-sedona">О Седоне</a>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link" href="hotels.html">Гостиницы</a>
@@ -41,8 +41,8 @@
             </nav>
         </header>
 
-        <main class="index-main">
-            <h1 class="visually-hidden">Седона</h1>
+        <main class="main-index">
+            <h1 class="visually-hidden" id="about-sedona">Седона</h1>
             <img class="welcome-picture" src="" alt="Welcome to the gorgeous Sedona">
             <section class="reasons-intro">
                 <h2 class="visually-hidden">Почему Седона?</h2>
@@ -96,11 +96,12 @@
                 <a class="search-for-hotel" href="hotels.html">Поиск гостиницы в Седоне</a>
             </section>
         </main>
-        <footer>
+        
+        <footer class="page-footer">
             <section class="subscribe">
                 <h2>Подпишитесь на рассылку</h2>
                 <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-                <form action="#" method="post">
+                <form action="https://echo.htmlacademy.ru/" method="post">
                     <input type="email" placeholder="Ваш e-mail">
                     <button type="submit">Подписаться</button>
                 </form>
@@ -119,7 +120,7 @@
                     </li>
                 </ul>
                 <p>+7(812)812-12-12</p>
-                <a class="school-link" href="">Разработано .htmlacademy</a>
+                <a class="school-link" href="">Сделано .htmlacademy</a>
             </section>
         </footer>
     </body>

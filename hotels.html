@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <header class="index-header">
+        <header class="page-header">
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item">
@@ -16,7 +16,7 @@
                         <a class="navigation-link" href="index.html">О Седоне</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="hotels.html">Гостиницы</a>
+                        <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
                     </li>
                 </ul>
                 <ul class="navigation-list navigation-user">
@@ -40,17 +40,78 @@
                 </ul>
             </nav>
         </header>
-        <main>
 
-            Здесь будет основной раздел
+        <main class="main-inner">
+            <header class="hotels-search-header">
+                <h1 class="hotels-main-title">Гостиницы Седоны</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
+                      </li>
+                      <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link">Каталог</a>
+                      </li>
+                </ul>
+
+                <section class="hotels-list">
+                    <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+                    <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
+                        <fieldset class="catalog-filter-group">
+                            <legend class="catalog-filter-title">Инфраструктура:</legend>
+                            <label><input type="checkbox" name="facilities" value="Бассейн" checked>Бассейн</label>
+                            <label><input type="checkbox" name="facilities" value="Парковка" checked>Парковка</label>
+                            <label><input type="checkbox" name="facilities" value="Wi-Fi">Wi-Fi</label>
+                        </fieldset>
+                        <fieldset class="catalog-filter-group">
+                            <legend class="catalog-filter-title">Тип жилья:</legend>
+                            <label><input type="radio" name="accomodation-type" value="Гостиница" checked>Гостиница</label>
+                            <label><input type="radio" name="accomodation-type" value="Мотель">Мотель</label>
+                            <label><input type="radio" name="accomodation-type" value="Апартаменты">Апартаменты</label>
+                        </fieldset>
+                        <fieldset class="catalog-filter-group">
+                            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                            <label class="catalog-filter-label">от<input class="catalog-filter-input" type="number" name="min-price"></label>
+                            <label class="catalog-filter-label">до<input class="catalog-filter-input" type="number" name="max-price"></label>
+                            <button class="range-toggle toggle-min" type="button">
+                                <span class="visually-hidden">Изменить минимальную цену</span>
+                            </button>
+                            <button class="range-toggle toggle-max" type="button">
+                                <span class="visually-hidden">Изменить максимальную цену</span>
+                            </button>
+                        </fieldset>
+                        <button class="button" type="submit">Применить</button>
+                        <button class="uncharge-button" type="submit">Сбросить</button>
+                    </form>
+                    <p class="results-found">Найдено гостиниц: 38</p>
+                    <form class="sorting-type">
+                        <label class="visually-hidden" for="sorting">Сортировка</label>
+                        <select class="select-control" id="sorting" name="sorting">
+                            <option value="popular">Сначала популярные</option>
+                            <option value="cheap">Сначала дешёвые</option>
+                            <option value="expensive">Сначала дорогие</option>
+                        </select>
+                        <button class="visually-hidden" type="submit">Отсортировать</button>
+                    </form>
+                        <a href="#" class="showcase-button current-showcase-button">
+                            <span class="visually-hidden">Показать список</span>
+                        </a>
+                        <a href="#" class="showcase-button">
+                            <span class="visually-hidden">Показать по одной</span>
+                        </a>
+                        <a href="#" class="showcase-button">
+                            <span class="visually-hidden">Показать карточки</span>
+                        </a>
+                </section>
+            </header>
         </main>
-        <footer>
+        
+        <footer class="page-footer">
             <section class="subscribe">
                 <h2>Подпишитесь на рассылку</h2>
                 <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-                <form action="#" method="post">
+                <form action="https://echo.htmlacademy.ru/" method="post">
                     <input type="email" placeholder="Ваш e-mail">
-                    <button type="submit">Подписаться</button>
+                    <button class="button" type="submit">Подписаться</button>
                 </form>
             </section>
             <section class="contacts">
@@ -67,7 +128,7 @@
                     </li>
                 </ul>
                 <p>+7(812)812-12-12</p>
-                <a class="school-link" href="">Разработано .htmlacademy</a>
+                <a class="school-link" href="">Сделано .htmlacademy</a>
             </section>
         </footer>
     </body>
