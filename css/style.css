@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: PT Sans, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.navigation {
+    width: 1060px;
+    height: 70px;
+}
+
+.navigation-list {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 139px;
+    height: 70px;
+}
+
+.wanna-go-here {
+    display: block;
+    background: #756257;
+    border-radius: 4px;
+    padding: 9px 15px 8px 15px;
+    width: 160px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.welcome-picture-section {
+    width: 1200px;
+    height: 485px;
+    background: lightseagreen;
+}
+
+.welcome-picture {
+    margin: 51px auto;
+    width: 458px;
+    height: 352px;
+}
