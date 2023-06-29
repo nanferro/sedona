@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="page-header">
@@ -60,94 +60,97 @@
         </header>
         <main class="main-index">
             <h1 class="visually-hidden" id="about-sedona">Седона</h1>
-            <section class="welcome-picture-section">
-                <img class="welcome-picture" src="img/welcome.png" alt="Welcome to the gorgeous Sedona">
-            </section>
+            <img class="welcome-picture" src="img/index-welcome.jpg" alt="Welcome to the gorgeous Sedona">
             <section class="reasons-intro">
                 <h2 class="visually-hidden">Почему Седона?</h2>
                 <p class="reasons-intro-title">Седона - небольшой городок в Аризоне, заслуживаюший большего!</p>
-                <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-                <ol class="reasons">
-                    <li class="blue-reasons">
-                        <h3 class="reasons-title">Настоящий городок</h3>
-                        <span class="reason-number">№1</span>
-                        <p class="reasons-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                    </li>
-                    <li>
+                <p class="reasons-intro-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+            </section>
+            <section class="reasons-wrapper">
+                <ol class="reasons-list">
+                    <li class="reasons-picture reasons-picture-right">
+                        <div class="blue-reasons reasons-block">
+                            <h3 class="reasons-title">Настоящий городок</h3>
+                            <span class="reason-number">— №1 —</span>
+                            <p class="reasons-text reasons-text-wpic">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                        </div>
                         <img class="reasons-image" src="img/photo-features-1-town.png" alt="Настоящий городок">
                     </li>
                     <ul>
-                        <li class="light-blue-reasons">
+                        <li class="light-blue-reasons reasons-block-icon">
                             <img class="reasons-icon" src="img/icon-1-housing.png">
-                            <h3 class="reasons-title">Жильё</h3>
+                            <h3 class="reasons-title reasons-title-wicon">Жильё</h3>
                             <p class="reasons-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
-                        <li class="white-reasons">
+                        <li class="white-reasons reasons-block-icon">
                             <img class="reasons-icon" src="img/icon-2-food.png">
-                            <h3 class="reasons-title">Еда</h3>
+                            <h3 class="reasons-title reasons-title-wicon">Еда</h3>
                             <p class="reasons-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                         </li>
-                        <li class="light-blue-reasons">
+                        <li class="light-blue-reasons reasons-block-icon">
                             <img class="reasons-icon" src="img/icon-3-souvenirs.png">
-                            <h3 class="reasons-title">Сувениры</h3>
+                            <h3 class="reasons-title reasons-title-wicon">Сувениры</h3>
                             <p class="reasons-text">Не только китайского, но и настоящего местного производства!</p>
                         </li>
                     </ul>
-                    <li>
+                    <li class="reasons-picture reasons-picture-left">
                         <img class="reasons-image" src="img/photo-features-2-kanyon.png" alt="Каньон в Седоне">
+                        <div class="blue-reasons reasons-block">
+                            <h3 class="reasons-title">Там есть мост дьявола</h3>
+                            <span class="reason-number">— №2 —</span>
+                            <p class="reasons-text reasons-text-wpic">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                        </div>
                     </li>
-                    <li class="blue-reasons">
-                        <h3 class="reasons-title">Там есть мост дьявола</h3>
-                        <span class="reason-number">№2</span>
-                        <p class="reasons-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-                    </li>
-                    <li class="white-reasons">
+                    <li class="light-blue-reasons reasons-block">
                         <h3 class="reasons-title">Небольшая площадь</h3>
-                        <span class="reason-number">№3</span>
+                        <span class="reason-number">— №3 —</span>
                         <p class="reasons-text">Все достопримечательности находятся очень близко</p>
                     </li>
-                    <li class="light-blue-reasons">
+                    <li class="darker-light-blue-reasons reasons-block">
                         <h3 class="reasons-title">Красивая дорога</h3>
-                        <span class="reason-number">№4</span>
+                        <span class="reason-number">— №4 —</span>
                         <p class="reasons-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </li>
-                    <li class="white-reasons">
+                    <li class="light-blue-reasons reasons-block">
                         <h3 class="reasons-title">Мало туристов</h3>
-                        <span class="reason-number">№5</span>
+                        <span class="reason-number">— №5 —</span>
                         <p class="reasons-text">Большинство едет в Гранд-Каньон и толпится там</p>
                     </li>
                 </ol>
             </section>
-            <section class="r-u-unterested">
-                <h2>Заинтересовались?</h2>
-                <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <section class="r-u-interested">
+                <h2 class="interested-title">Заинтересовались?</h2>
+                <p class="interested-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <a class="search-for-hotel" href="hotels.html">Поиск гостиницы в Седоне</a>
             </section>
         </main>
         
         <footer class="page-footer">
             <section class="subscribe">
-                <h2>Подпишитесь на рассылку</h2>
-                <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-                <form action="https://echo.htmlacademy.ru/" method="post">
-                    <input type="email" placeholder="Ваш e-mail">
-                    <button type="submit">Подписаться</button>
+                <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+                <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="subscribe-input" type="email" placeholder="Ваш e-mail">
+                    <button class="subscribe-button" type="submit">Подписаться</button>
                 </form>
             </section>
             <section class="contacts">
                 <h2 class="visually-hidden">Контакты</h2>
-                <ul>
+                <ul class="social-networks">
                     <li>
-                        <a class="social-networks visually-hidden" href="">twitter</a>
+                        <a class="visually-hidden" href="">twitter</a>
+                        <img class="twitter-icon" src="img/twitter-icon.svg">
                     </li>
                     <li>
-                        <a class="social-networks visually-hidden" href="">facebook</a>
+                        <a class="visually-hidden" href="">facebook</a>
+                        <img class="facebook-icon" src="img/facebook-icon.png">
                     </li>
                     <li>
-                        <a class="social-networks visually-hidden" href="">youtube</a>
+                        <a class="visually-hidden" href="">youtube</a>
+                        <img class="youtube-icon" src="img/youtube-icon.png">
                     </li>
                 </ul>
-                <p>+7(812)812-12-12</p>
+                <p class="telephone">+7 (812) 812-12-12</p>
                 <a class="school-link" href="https://htmlacademy.ru">
                     <span class="visually-hidden">
                         Сделано в .htmlacademy

@@ -127,7 +127,6 @@ ul, ol {
 
 .search-for-hotel {
     width: 575px;
-    height: 30px;
     display: block;
     background: #756257;
     border-radius: 10px;
@@ -167,7 +166,6 @@ ul, ol {
 
 .subscribe-input {
     width: 600px;
-    height: 60px;
     border-radius: 10px 0 0 10px;
     font-size: 18px;
     line-height: 26px;
@@ -175,7 +173,6 @@ ul, ol {
 
 .subscribe-button {
     width: 200px;
-    height: 60px;
     background-color: #83B3D3;
     border-radius: 0px 10px 10px 0px;
     padding: 1px 0;
