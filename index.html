@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Седона — городок в Аризоне</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="page-header">
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <img class="logo" href="img/logo.svg" alt="Лого" Title="Логотип Седоны">
+                        <img class="logo" src="img/logo.svg" alt="Лого" Title="Логотип Седоны">
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link navigation-link-current" href="#">
@@ -60,7 +60,7 @@
         </header>
         <main class="main-index">
             <h1 class="visually-hidden" id="about-sedona">Седона</h1>
-            <img class="welcome-picture" src="img/index-welcome.jpg" alt="Welcome to the gorgeous Sedona">
+            <img class="welcome-picture" src="img/index/index-welcome.jpg" alt="Welcome to the gorgeous Sedona">
             <section class="reasons-intro">
                 <h2 class="visually-hidden">Почему Седона?</h2>
                 <p class="reasons-intro-title">Седона - небольшой городок в Аризоне, заслуживаюший большего!</p>
@@ -74,27 +74,27 @@
                             <span class="reason-number">— №1 —</span>
                             <p class="reasons-text reasons-text-wpic">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         </div>
-                        <img class="reasons-image" src="img/photo-features-1-town.png" alt="Настоящий городок">
+                        <img class="reasons-image" src="img/index/photo-features-1-town.png" alt="Настоящий городок">
                     </li>
                     <ul>
                         <li class="light-blue-reasons reasons-block-icon">
-                            <img class="reasons-icon" src="img/icon-1-housing.png">
+                            <img class="reasons-icon" src="img/index/icon-1-housing.png">
                             <h3 class="reasons-title reasons-title-wicon">Жильё</h3>
                             <p class="reasons-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
                         <li class="white-reasons reasons-block-icon">
-                            <img class="reasons-icon" src="img/icon-2-food.png">
+                            <img class="reasons-icon" src="img/index/icon-2-food.png">
                             <h3 class="reasons-title reasons-title-wicon">Еда</h3>
                             <p class="reasons-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                         </li>
                         <li class="light-blue-reasons reasons-block-icon">
-                            <img class="reasons-icon" src="img/icon-3-souvenirs.png">
+                            <img class="reasons-icon" src="img/index/icon-3-souvenirs.png">
                             <h3 class="reasons-title reasons-title-wicon">Сувениры</h3>
                             <p class="reasons-text">Не только китайского, но и настоящего местного производства!</p>
                         </li>
                     </ul>
                     <li class="reasons-picture reasons-picture-left">
-                        <img class="reasons-image" src="img/photo-features-2-kanyon.png" alt="Каньон в Седоне">
+                        <img class="reasons-image" src="img/index/photo-features-2-kanyon.png" alt="Каньон в Седоне">
                         <div class="blue-reasons reasons-block">
                             <h3 class="reasons-title">Там есть мост дьявола</h3>
                             <span class="reason-number">— №2 —</span>
@@ -124,11 +124,10 @@
                 <a class="search-for-hotel" href="hotels.html">Поиск гостиницы в Седоне</a>
             </section>
         </main>
-        
         <footer class="page-footer">
-            <section class="subscribe">
-                <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-                <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <section class="index-subscribe">
+                <h2 class="subscribe-title white-letters">Подпишитесь на рассылку</h2>
+                <p class="subscribe-text white-letters">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                     <input class="subscribe-input" type="email" placeholder="Ваш e-mail">
                     <button class="subscribe-button" type="submit">Подписаться</button>

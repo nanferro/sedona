@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Гостиницы Седоны</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -11,16 +11,22 @@
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <img class="logo" href="" alt="Sedona logo">
+                        <img class="logo" src="img/logo.svg" alt="Лого" Title="Логотип Седоны">
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="index.html">Главная</a>
+                        <a class="navigation-link" href="#">
+                            Главная
+                        </a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="index.html">О Седоне</a>
+                        <a class="navigation-link" href="index.html#about-sedona">
+                            О Седоне
+                        </a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
+                        <a class="navigation-link navigation-link-current" href="hotels.html">
+                            Гостиницы
+                        </a>
                     </li>
                 </ul>
                 <ul class="navigation-list navigation-user">
@@ -29,6 +35,7 @@
                             <span class="visually-hidden">
                                 Поиск
                             </span>
+                            <img class="navigation-user-icons" src="img/search-icon.svg" alt="Поиск" title="Поиск">
                         </a>
                     </li>
                     <li class="navigation-item">
@@ -36,15 +43,17 @@
                             <span class="visually-hidden">
                                 Избранное
                             </span>
+                            <img class="navigation-user-icons" src="img/favorite-icon.svg" alt="Избранное" title="Избранное">
                         </a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#">Хочу сюда!</a>
+                        <a class="navigation-link wanna-go-here" href="#">
+                            Хочу сюда!
+                        </a>
                     </li>
                 </ul>
             </nav>
         </header>
-
         <main class="main-inner">
             <header class="hotels-search-header">
                 <h1 class="hotels-main-title">Гостиницы Седоны</h1>
@@ -185,31 +194,38 @@
                 </section>
             </header>
         </main>
-        
         <footer class="page-footer">
-            <section class="subscribe">
-                <h2>Подпишитесь на рассылку</h2>
-                <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-                <form action="https://echo.htmlacademy.ru/" method="post">
-                    <input type="email" placeholder="Ваш e-mail">
-                    <button class="button" type="submit">Подписаться</button>
+            <section class="hotels-subscribe">
+                <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+                <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="subscribe-input" type="email" placeholder="Ваш e-mail">
+                    <button class="subscribe-button" type="submit">Подписаться</button>
                 </form>
             </section>
             <section class="contacts">
                 <h2 class="visually-hidden">Контакты</h2>
-                <ul>
+                <ul class="social-networks">
                     <li>
-                        <a class="social-networks visually-hidden" href="">twitter</a>
+                        <a class="visually-hidden" href="">twitter</a>
+                        <img class="twitter-icon" src="img/twitter-icon.svg">
                     </li>
                     <li>
-                        <a class="social-networks visually-hidden" href="">facebook</a>
+                        <a class="visually-hidden" href="">facebook</a>
+                        <img class="facebook-icon" src="img/facebook-icon.png">
                     </li>
                     <li>
-                        <a class="social-networks visually-hidden" href="">youtube</a>
+                        <a class="visually-hidden" href="">youtube</a>
+                        <img class="youtube-icon" src="img/youtube-icon.png">
                     </li>
                 </ul>
-                <p>+7(812)812-12-12</p>
-                <a class="school-link" href="">Сделано .htmlacademy</a>
+                <p class="telephone">+7 (812) 812-12-12</p>
+                <a class="school-link" href="https://htmlacademy.ru">
+                    <span class="visually-hidden">
+                        Сделано в .htmlacademy
+                    </span>
+                    <img class="school-logo" src="img/htmlacademy-logo.png">
+                </a>
             </section>
         </footer>
     </body>
